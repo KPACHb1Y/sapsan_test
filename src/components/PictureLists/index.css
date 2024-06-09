@@ -1,0 +1,13 @@
+.wrapper-item__pictures {
+    margin-top: 103px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 900px) {
+    .wrapper-item__pictures {
+        margin-top: 80px;
+    }
+}

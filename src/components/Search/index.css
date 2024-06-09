@@ -1,0 +1,20 @@
+.wrapper-search {
+    display: flex;
+    flex-direction: row;
+}
+
+.visible {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    padding: 40px 0 16px 0;
+}
+
+@media (max-width: 900px) {
+    .wrapper-search {
+        width: 90%
+    }
+    .visible {
+        padding: 16px 0;
+    }
+}

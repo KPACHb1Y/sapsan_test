@@ -14,8 +14,6 @@ function App() {
     const [visible, setVisible] = useState(false);
 
     const handleClickPictures = () => {
-        setTitle('К сожалению, поиск не дал результатов');
-
         if (!value) {
             return;
         }
@@ -35,9 +33,9 @@ function App() {
             .catch((err) => {
                 console.error(err);
             })
-            .finally(() => {
-                setVisible(true);
-            })
+
+        setTitle('К сожалению, поиск не дал результатов');
+        setVisible(true);
     }
 
     return (
